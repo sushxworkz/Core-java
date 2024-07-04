@@ -1,21 +1,38 @@
 class CookingOil{
 
-	public static void main(String furtuneSunlite[]){
-	
-		String oilName = "SunFlower";
-		String size = "1l" ;
-		String brand = "Fortune";
-		String specialFuture = "Refined";
-		int packetSize = 1;
-		
-		System.out.println("Main is Started");
-		
-		System.out.println("The Oil Name " + oilName);
-		System.out.println("The Oil Size " + size);
-		System.out.println("The Oil Brand " + brand);
-		System.out.println("The Oil  Special Future " + specialFuture);
-		System.out.println("The Oil pcket Size " + packetSize);
-		
-		System.out.println("Main is Ended");
+	public static void main(String[] sunflower){
+			System.out.println("Main Started");
+			//invoke a method
+			//call a method
+			getFeatures();
+			
+			System.out.println("Main Ended");
 	}
+
+	public static void getFeatures(){
+	
+		System.out.println("getFeatures method started ");
+
+			String brand="Vedaka";
+			String dietType="Vegetarian";
+			String flavour="Mustard";
+			int netContentVolumeInMililtre=500;
+			String specialFeature	="Cold Pressed";
+			String  itemForm="Liquid";
+			String speciality	="Vegetarian";
+			int price=829;
+			
+			System.out.println("The Brand Name is "+brand);
+			System.out.println("The Diet Type"+dietType);
+			System.out.println("The Flavour"+flavour);
+			System.out.println("The Net Content Volume In Mililtree is "+netContentVolumeInMililtre);
+			System.out.println("The  Special Feature "+specialFeature);
+			System.out.println("The  Item Form "+itemForm);
+			System.out.println("The  speciality is "+ speciality);
+			System.out.println("The Price is "+price);
+			
+			System.out.println("getFeatures method ended");
+			return;
+		}
 }
+	

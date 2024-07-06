@@ -1,10 +1,10 @@
-class Projector
-{
-	public static void main(String[] epson)
-	{
-		System.out.println("Projector are used very collage");
-		System.out.println("XGA Resolution");
-		System.out.println("3300 Lumens in Colour Brightness & White Brightness)");
-		System.out.println("Lamp Life 12000 Hrs (Eco Mode)");
+class Projector{
+
+	public static void display(){
+	
+	System.out.println("A projector is a device that allows you to display images, videos");
+	System.out.println("Digital projectors use either DLP or LCD chip technology");
+	
+	return;
 	}
 }

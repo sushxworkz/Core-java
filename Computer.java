@@ -1,4 +1,4 @@
-class Laptop{
+class Computer{
 
 	static boolean isConnected = false;
 	
@@ -7,21 +7,21 @@ class Laptop{
 		System.out.println("Start of turnOn");
 		if(isConnected == false){
 			isConnected = true;
-			System.out.println("Laptop is Tunerd On");
-			return;
+			System.out.println("The Computer is Turned On");
 		}
-		System.out.println("End on turnOn");
-	}
+		System.out.println("End of turnOn");
+		return;
+		}
+	
 	
 	public static void turnOff(){
 	
 		System.out.println("Start of turnOff");
 		if(isConnected == true){
 			isConnected = false;
-			System.out.println("Laptop is Turned Off");
+			System.out.println("The Computer is Turned Off");
 		}
 		System.out.println("End of turnOff");
 		return;
 	}
 }
-			

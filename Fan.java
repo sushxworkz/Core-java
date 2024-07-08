@@ -1,37 +1,28 @@
 class Fan{
 
-	public static void main(String[] Bajaj){
-			System.out.println("Main Started");
-			//invoke a method
-			//call a method
-			getFeatures();
-			
-			System.out.println("Main Ended");
-	}
-
-	public static void getFeatures(){
+	static boolean isConnected = false;
 	
-		System.out.println("getFeatures method started ");
+	public static void turnOn(){
 
-			String brand="Bajaj";
-			String colour="Brown";
-			String electricfandesign="	Ceiling Fan";
-			String powerSource="Power Source";
-			String style	 	="Star Rated";
-			String  roomType="Bedroom, Living Room, Dining Room";
-			String speciality	="high velocity";
-			int price=278;
-			
-			System.out.println("The Brand Name is "+brand);
-			System.out.println("The Colour "+colour);
-			System.out.println("The electric fan design"+electricfandesign);
-			System.out.println("The  Power Source"+powerSource);
-			System.out.println("The Style	 "+style	);
-			System.out.println("The   Room Type"+roomType);
-			System.out.println("The  speciality is "+ speciality);
-			System.out.println("The Price is "+price);
-			
-			System.out.println("getFeatures method ended");
-			return;
+		System.out.println("Start of  turnOn");
+		
+		if(isConnected == false){
+			isConnected = true;
+			System.out.println("Fan is turned on");
 		}
-}
+		System.out.println("End of turnOff");
+		return;
+	}
+	
+	public static void turnOff(){
+	
+		System.out.println("Start of turnOff");
+		
+		if(isConnected == true){
+			isConnected = false;
+			System.out.println("Fan is turned off");
+		}
+		System.out.println("End of turnOff");
+		return;
+		}
+	}

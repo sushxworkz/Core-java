@@ -1,7 +1,7 @@
-class Laptop{
+class Speaker{
 
 	static boolean isConnected = false;
-	static int maxVolume=10;
+	static int maxVolume=12;
 	static int currentVolume;
 	static int minVolume=0;
 	
@@ -15,6 +15,7 @@ class Laptop{
 		return isConnected;
 	}
 	
+	//increase volume
 	public static void increaseVolume(){
 		System.out.println("Start of increaseVolume");
 			if(isConnected==true){
@@ -24,12 +25,12 @@ class Laptop{
 				}
 			}
 			else
-			System.out.println("Turn on laptop");
+			System.out.println("Turn on speaker");
 		System.out.println("End of increaseVolume");
 		return;
 	}
 	
-	
+	//decrease volume
 	public static void decreaseVolume(){
 	
 		System.out.println("Start of decreaseVolume");
@@ -40,7 +41,7 @@ class Laptop{
 				}
 			}
 			else 
-			System.out.println("Turn on laptop");
+			System.out.println("Turn on speaker");
 		System.out.println("End of decreaseVolume");
 		return;
 	}

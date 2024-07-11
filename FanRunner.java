@@ -1,15 +1,22 @@
 class FanRunner{
 
-	public static void main(String[] croptom ){
+	public static void main(String[] usha){
 	
-		System.out.println("Main startted");
+		System.out.println("Main Started");
 		
-		boolean connect = Fan.onOrOff();
-		System.out.println("The Fan connected: " +connect);
-			connect = Fan.onOrOff();
-		System.out.println("The Fan connected :"  +connect);
-		
-		System.out.println("Main ended");
+			boolean connect=Fan.onOrOff();
+			System.out.println("The fan connected:"+connect);
+			
+				Fan.increaseSpeed();
+				Fan.increaseSpeed();
+				Fan.increaseSpeed();
+				
+				Fan.decreaseSpeed();
+				Fan.decreaseSpeed();
+				Fan.decreaseSpeed();
+			
+				connect=Fan.onOrOff();
+			System.out.println("The fan connected"+connect);
+		System.out.println("Main Ended");
 	}
-
 }

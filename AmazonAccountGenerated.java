@@ -14,6 +14,16 @@ class AmazonAccountGenerated{
 		
 		 boolean isAmazonAccountCreated=false;
 		 
+		 isAmazonAccountCreated=validateAmazonUserDetails( mobileNumber, mail, password,  loginPassword, userFirstName, userLastName);
+		 
+		
+		return isAmazonAccountCreated;
+	}
+	
+	public static boolean validateAmazonUserDetails(long mobileNumber,String mail,String password, String loginPassword,String userFirstName,String userLastName){
+		
+		boolean isAllFieldsValidated=false;
+		
 		 boolean   isMobileNumberValid=false; 
 		 boolean isMailValid=false;
 		 boolean isPasswordValid=false;
@@ -75,9 +85,10 @@ class AmazonAccountGenerated{
 		
 		
 		if(isMobileNumberValid==true && isMailValid==true  && isPasswordValid==true && isLoginPasswordValid==true && isUserFirstNameValid==true && isUserLastNameValid==true ){
-		isAmazonAccountCreated=true;
+		isAllFieldsValidated=true;
 		}
-		return isAmazonAccountCreated;
+		
+		return isAllFieldsValidated;
 	}
 	
 	public static void readUserAmazonAccountDetails(){

@@ -21,7 +21,19 @@ class LinkedInAccount{
 		
 		 boolean isLinkedInAccountCreated=false;
 		 
-		 boolean   isMobileNumberValid=false; 
+		 
+		 isLinkedInAccountCreated=validateLinkedInUserDetails( mobileNumber, mail,password,  loginPassword,userFirstName,userLastName, currentLocation, workingIndustry,companyName, userSkill, userLanguaue,project,userExperience, degreeCollage );
+		 
+		 
+		
+		return isLinkedInAccountCreated;
+	}
+	
+	public static boolean validateLinkedInUserDetails(long mobileNumber,String mail,String password, String loginPassword,String userFirstName,String userLastName,String currentLocation,String workingIndustry,String companyName,String userSkill,String userLanguaue,String project,int userExperience,String degreeCollage ){
+		
+		boolean isAllFieldsValidated=false;
+		
+		boolean   isMobileNumberValid=false; 
 		 boolean isMailValid=false;
 		 boolean isPasswordValid=false;
 		 boolean isLoginPasswordValid=false;
@@ -149,10 +161,9 @@ class LinkedInAccount{
 		
 		
 		if(isMobileNumberValid==true && isMailValid==true  && isPasswordValid==true && isLoginPasswordValid==true && isUserFirstNameValid==true && isUserLastNameValid==true && isCurrentLocationValid==true && isWorkingIndustryValid==true && isCompanynameValid==true  && isUserSkillValid==true && isUserLangaueValid==true && isProjectValid==true && isUserExperienceValid==true && isDegreeCollageValid==true ){
-		isLinkedInAccountCreated=true;
+		isAllFieldsValidated=true;
 		}
-		
-		return isLinkedInAccountCreated;
+		return isAllFieldsValidated;
 	}
 	
 	public static void readUserLinkedInAccountDetails(){

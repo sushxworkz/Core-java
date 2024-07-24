@@ -12,7 +12,19 @@ class SBIBankAccountGeneration{
 	
 	     boolean isBankAccountCreated = false ;
 		 
-		 boolean isFirstName = false;
+		 
+		 isBankAccountCreated=validateBankUserDetails( firstName,  lastName, aadhaarNumber, dOB,  address, mobileNumber);
+		
+		 
+		 return isBankAccountCreated ;
+	
+	}
+	
+	public static boolean validateBankUserDetails(String firstName, String lastName,long aadhaarNumber,String dOB, String address,long mobileNumber){
+		
+		boolean isAllFieldsValidated=false;
+			
+		boolean isFirstName = false;
 		 boolean isLatName=false;
 		 boolean isAadhaarNumber = false;
 		 boolean isDOB = false;
@@ -57,14 +69,12 @@ class SBIBankAccountGeneration{
 			System.out.println("mobile number is invalid");
 		 
 		 if(isFirstName == true && isLatName==true&& isAadhaarNumber == true && isDOB == true && isAddress == true && isMobileNumber == true){
-			 isBankAccountCreated = true; 
+			 isAllFieldsValidated = true; 
 		 }
-
-		 
-		 
-		 return isBankAccountCreated ;
-	
+		 return isAllFieldsValidated;
 	}
+		 
+
     
 	public static void readUserBankAccountDetails(){
 	

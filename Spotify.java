@@ -14,6 +14,17 @@ class Spotify{
 		
 		 boolean isSpotifyAccountCreated=false;
 		 
+		 isSpotifyAccountCreated=validatedSpotifyUserDetails( mobileNumber, mail,password,  userFirstName,loginId);
+		  
+		return isSpotifyAccountCreated;
+	}
+	
+	public static boolean validatedSpotifyUserDetails(long mobileNumber,String mail,String password, String userFirstName,String loginId){
+		
+		
+		boolean isAllFieldValidated=false;
+	
+			
 		 boolean   isMobileNumberValid=false; 
 		 boolean isMailValid=false;
 		 boolean isPasswordValid=false;
@@ -67,9 +78,14 @@ class Spotify{
 		
 		
 		if(isMobileNumberValid==true && isMailValid==true  && isPasswordValid==true &&  isUserFirstNameValid==true && isLoginIdValid==true){
-		isSpotifyAccountCreated=true;
+		isAllFieldValidated=true;
 		}
-		return isSpotifyAccountCreated;
+			
+			
+		return isAllFieldValidated;
+		
+			
+		
 	}
 	
 	public static void readUserSpotifyAccountDetails(){

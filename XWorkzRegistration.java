@@ -14,9 +14,26 @@ class XWorkzRegistration{
 	
 	public static boolean createUserXWorkzRegister(String userFirstName,String userLastName,String fatherName,String motherName,long mobileNumber,String mail,String dob,double userCgpa,String collageName){
 		
+		
 		 boolean isXWorkzRegisterCreated=false;
 		 
-		 boolean isUserFirstNameValid=false;
+		 
+		 
+			isXWorkzRegisterCreated=validateXWorkzUserDetails( userFirstName, userLastName, fatherName, motherName,mobileNumber,mail, dob, userCgpa, collageName);
+		 
+		
+		
+		return isXWorkzRegisterCreated;
+	}
+	
+	
+	public static boolean validateXWorkzUserDetails(String userFirstName,String userLastName,String fatherName,String motherName,long mobileNumber,String mail,String dob,double userCgpa,String collageName){
+		
+		
+			boolean isAllFieldsValidated=false;
+			
+			
+			 boolean isUserFirstNameValid=false;
 		 boolean isUserLastNameValid=false;
 		 boolean isFatherNameValid=false;
 		 boolean isMotherNameValid=false;
@@ -101,11 +118,13 @@ class XWorkzRegistration{
 		
 		
 		if( isUserFirstNameValid==true && isUserLastNameValid==true && isMobileNumberValid==true && isMailValid==true && isFatherNameValid==true && isMotherNameValid==true && isDobValid==true &&  isUserCgpaValid==true && isCollageNameValid==true ){
-		isXWorkzRegisterCreated=true;
+		isAllFieldsValidated=true;
 		}
+	
+		return isAllFieldsValidated;
 		
-		return isXWorkzRegisterCreated;
 	}
+	
 	
 	public static void readUserXWorkzRegisterDetails(){
 		

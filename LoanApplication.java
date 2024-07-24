@@ -10,6 +10,16 @@ class LoanApplication{
 	 public static boolean createLoanAccount(String creditScore , String loanType , String loanApplicantName , String bankName , String rateOfInterest , String yearsOfLoan){
 		boolean isLoanCreated = false;
 		
+		isLoanCreated=validateLoanUserDetails( creditScore ,  loanType , loanApplicantName ,  bankName , rateOfInterest , yearsOfLoan);
+		
+		
+		return isLoanCreated;
+	}
+	
+	public static boolean validateLoanUserDetails(String creditScore , String loanType , String loanApplicantName , String bankName , String rateOfInterest , String yearsOfLoan){
+		
+		boolean isAllFieldsValidated=false;
+		
 		boolean iscreditScoreValid = false;
 		boolean isloanTypeValid = false;
 		boolean isloanApplicantNameValid = false;
@@ -66,10 +76,11 @@ class LoanApplication{
 		
 		
 		if( iscreditScoreValid == true && isloanTypeValid == true && isloanApplicantNameValid== true && isbankNameValid== true && israteOfInterestValid == true && isyearsOfLoanValid== true){
-			isLoanCreated = true;
+			isAllFieldsValidated = true;
 		}
-		return isLoanCreated;
-	}
+		return isAllFieldsValidated;
+		
+	}	
 	
 	public static void readLoanAccount(){
 		

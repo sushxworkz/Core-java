@@ -34,10 +34,20 @@ class TouristCompanyRunner{
 			addTouristPlace=TouristCompany.addTouristPlaceName("Shimla");
 			System.out.println("Tourist Place name added:"+addTouristPlace);
 			
-			addTouristPlace=TouristCompany.addTouristPlaceName("Varanashi");
-			System.out.println("Tourist Place name added:"+addTouristPlace);
+			
 			
 			TouristCompany.showTouristPlaceNames();
+			
+			boolean updateTouristPlace=TouristCompany.updateTouristPlaceName("Goa","Varanashi");
+			System.out.println("The tourist place name updated:"+updateTouristPlace);
+			
+			TouristCompany.showTouristPlaceNames();
+			
+			boolean deleteTouristPlaceName=TouristCompany.deleteTouristPlaceName("Pandichery");
+			System.out.println("The tourist place name deleted:"+deleteTouristPlaceName);
+			
+			TouristCompany.showTouristPlaceNames();
+			
 		System.out.println("Main Ended");
 	}
 }

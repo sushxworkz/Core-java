@@ -37,10 +37,21 @@ class AmazonRunner{
 				addProduct=Amazon.addProductName("Chair");
 				System.out.println("The product name added:"+addProduct);
 				
-				addProduct=Amazon.addProductName("Iron Box");
-				System.out.println("The product name added:"+addProduct);
+				
 			
 			Amazon.showProductNames();
+			
+			
+			boolean updateProductName=Amazon.updateProductName("Fan","Iron Box");
+			System.out.println("The product name updated:"+updateProductName);
+			
+			Amazon.showProductNames();
+			
+			boolean deleteProductName=Amazon.deleteProductName("Bulb");
+			System.out.println("Product name deleted:"+deleteProductName);
+			
+			Amazon.showProductNames();
+			
 		System.out.println("Main Eneded");
 	}
 }

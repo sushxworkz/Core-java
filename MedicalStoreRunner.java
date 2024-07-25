@@ -34,11 +34,20 @@ class MedicalStoreRunner{
 				addMedicine=MedicalStore.addMedicineName("Asirims");
 				System.out.println("The medicine name added:"+addMedicine);
 				
-				addMedicine=MedicalStore.addMedicineName("Powder");
-				System.out.println("The medicine name added:"+addMedicine);
 				
 				
 			MedicalStore.showMedicineNames();
+			
+			boolean updateMedicineName=MedicalStore.updateMedicineName("Lotion","Powder");
+			System.out.println("The medicine name updated:"+updateMedicineName);
+			
+			MedicalStore.showMedicineNames();
+			
+			boolean deleteMedicineName=MedicalStore.deleteMedicineName("Capsules");
+			System.out.println("The medicine name is deleted:"+deleteMedicineName);
+			
+			MedicalStore.showMedicineNames();
+			
 		System.out.println("Main Enede");
 	}
 }

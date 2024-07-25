@@ -21,11 +21,22 @@ class JuiceShopRunner{
 				
 				addJuice=JuiceShop.addJuiceName("Papaya Juice");
 				System.out.println("Juice name added:"+addJuice);
-				
-				addJuice=JuiceShop.addJuiceName("Sugarcane Juice");
-				System.out.println("Juice name added:"+addJuice);
+			
 			
 			JuiceShop. showJuiceNames();
+			
+			 
+			boolean updateJuiceName=JuiceShop.updateJuiceName("Orange Juice","Lemon Juice");
+			System.out.println("Juice name update:"+updateJuiceName);
+			
+			JuiceShop. showJuiceNames();
+			
+			boolean deleteJuiceName=JuiceShop.deleteJuiceName("PineApple Juice");
+			System.out.println("Juice name deleted:"+deleteJuiceName);
+			
+			JuiceShop. showJuiceNames();
+			
+			
 		System.out.println("Main Ended");
 		
 	}

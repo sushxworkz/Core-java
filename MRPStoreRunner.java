@@ -22,7 +22,7 @@ class MRPStoreRunner{
 				addAlcohol=MRPStore.addAlcoholName("Wiskey");
 				System.out.println("Alcohol name added:"+addAlcohol);
 				
-				addAlcohol=MRPStore.addAlcoholName("Brand");
+				addAlcohol=MRPStore.addAlcoholName("Brandi");
 				System.out.println("Alcohol name added:"+addAlcohol);
 				
 				addAlcohol=MRPStore.addAlcoholName("Gin");
@@ -34,11 +34,23 @@ class MRPStoreRunner{
 				addAlcohol=MRPStore.addAlcoholName("Champagne");
 				System.out.println("Alcohol name added:"+addAlcohol);
 				
-				addAlcohol=MRPStore.addAlcoholName("Cider");
-				System.out.println("Alcohol name added:"+addAlcohol);
+				
 			
 			
 			MRPStore.showAlcoholName();
+			
+			boolean updateAlcoholName=MRPStore.updatedAlcoholName("Beer","Cider");
+			System.out.println("The alcohol name updated:"+updateAlcoholName);
+			
+			MRPStore.showAlcoholName();
+			
+			
+			boolean deleteAlcoholName=MRPStore.deleteAlcoholName("Cognac");
+			System.out.println("The alcohol name deleted:"+deleteAlcoholName);
+			
+			MRPStore.showAlcoholName();
+
+			
 			
 		System.out.println("Main Enede");
 	}

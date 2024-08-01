@@ -4,15 +4,7 @@ class BankRunner{
 		
 		System.out.println("Main Started");
 	
-		Bank ref=new Bank();
-		
-		ref.bankId=678;
-		ref.bankName="Canara";
-		ref.branchName="Benglore";
-		ref.ifscCode="CNR0000705";
-		ref.shiftCode="ATCUNOM00ER";
-		ref.noOfWorkers=67;
-		ref.branchManagerName="Sahank";
+		Bank ref=new Bank(678,"Canara","Benglore","CNR0000705","ATCUNOM00ER",67,"Sahank");
 		
 		System.out.println("Bank Details:");
 		System.out.println("The bank id:"+ref.bankId);
@@ -23,15 +15,7 @@ class BankRunner{
 		System.out.println("The number of workers :"+ref.noOfWorkers);
 		System.out.println("The branch manager name:"+ref.branchManagerName);
 		
-		Bank ref1=new Bank();
-		
-		ref1.bankId=456;
-		ref1.bankName="Bank Of Baroda";
-		ref1.branchName="Benglore";
-		ref1.ifscCode="BARBOMGBANG";
-		ref1.shiftCode="BANKOFRUIO";
-		ref1.noOfWorkers=78;
-		ref1.branchManagerName="Santanu";
+		Bank ref1=new Bank(456,"Bank Of Baroda","Benglore","BARBOMGBANG","BANKOFRUIO",97,"Santanu");
 		
 		System.out.println("Bank Details:");
 		System.out.println("The bank id:"+ref1.bankId);
@@ -42,15 +26,7 @@ class BankRunner{
 		System.out.println("The number of workers :"+ref1.noOfWorkers);
 		System.out.println("The branch manager name:"+ref1.branchManagerName);
 		
-		Bank ref2=new Bank();
-		
-		ref2.bankId=784;
-		ref2.bankName="Union Bank of India";
-		ref2.branchName="Munbai";
-		ref2.ifscCode="UBI0568661";
-		ref2.shiftCode="NADUKERTYO";
-		ref2.noOfWorkers=90;
-		ref2.branchManagerName="Amir";
+		Bank ref2=new Bank(784,"Union Bank of India","Munbai","UBI0568661","NADUKERTYO",90,"Amir");
 		
 		System.out.println("Bank Details:");
 		System.out.println("The bank id:"+ref2.bankId);
@@ -61,15 +37,7 @@ class BankRunner{
 		System.out.println("The number of workers :"+ref2.noOfWorkers);
 		System.out.println("The branch manager name:"+ref2.branchManagerName);
 		
-		Bank ref3=new Bank();
-		
-		ref3.bankId=980;
-		ref3.bankName="Axis Bank";
-		ref3.branchName="Munbai";
-		ref3.ifscCode="UTIB000039";
-		ref3.shiftCode="NMKERTOBF";
-		ref3.noOfWorkers=56;
-		ref3.branchManagerName="Ranjit";
+		Bank ref3=new Bank(980,"Axis Bank","Munbai","UTIB000039","NMKERTOBF",56,"Ranjit");
 		
 		System.out.println("Bank Details:");
 		System.out.println("The bank id:"+ref3.bankId);
@@ -81,15 +49,7 @@ class BankRunner{
 		System.out.println("The branch manager name:"+ref3.branchManagerName);
 	
 		
-		Bank ref4=new Bank();
-		
-		ref4.bankId=345;
-		ref4.bankName="ICICI Bank";
-		ref4.branchName="Bandra Kurla  Complex";
-		ref4.ifscCode="ICIC000039";
-		ref4.shiftCode="EGITOKNHDS";
-		ref4.noOfWorkers=89;
-		ref4.branchManagerName="Omkar";
+		Bank ref4=new Bank(345,"ICICI Bank","Bandra Kurla  Complex","ICIC000039","EGITOKNHDS",89,"Omkar");
 		
 		System.out.println("Bank Details:");
 		System.out.println("The bank id:"+ref4.bankId);
@@ -100,16 +60,8 @@ class BankRunner{
 		System.out.println("The number of workers :"+ref4.noOfWorkers);
 		System.out.println("The branch manager name:"+ref4.branchManagerName);
 		
-		Bank ref5=new Bank();
-		
-		ref5.bankId=890;
-		ref5.bankName="Indian Bank";
-		ref5.branchName="Chennai";
-		ref5.ifscCode="IDIB000T065";
-		ref5.shiftCode="TRFYERTG097";
-		ref5.noOfWorkers=90;
-		ref5.branchManagerName="Suresh";
-		
+		Bank ref5=new Bank(890,"Indian Bank","Chennai","IDIB000T065","TRFYERTG097",90,"Suresh");
+	
 		System.out.println("Bank Details:");
 		System.out.println("The bank id:"+ref5.bankId);
 		System.out.println("The bank name is:"+ref5.bankName);
@@ -119,15 +71,7 @@ class BankRunner{
 		System.out.println("The number of workers :"+ref5.noOfWorkers);
 		System.out.println("The branch manager name:"+ref5.branchManagerName);
 		
-		Bank ref6=new Bank();
-		
-		ref6.bankId=623;
-		ref6.bankName="Kotak Mahindra Bank";
-		ref6.branchName="Munbai";
-		ref6.ifscCode="KKBK0000471";
-		ref6.shiftCode="YUIOEGYTY";
-		ref6.noOfWorkers=78;
-		ref6.branchManagerName="Bharash";
+		Bank ref6=new Bank(623,"Kotak Mahindra Bank","Munbai","KKBK0000471","YUIOEGYTY",78,"Bharash");
 		
 		System.out.println("Bank Details:");
 		System.out.println("The bank id:"+ref6.bankId);
@@ -138,15 +82,7 @@ class BankRunner{
 		System.out.println("The number of workers :"+ref6.noOfWorkers);
 		System.out.println("The branch manager name:"+ref6.branchManagerName);
 		
-		Bank ref7=new Bank();
-		
-		ref7.bankId=874;
-		ref7.bankName="HDFC Bank";
-		ref7.branchName="Mumbai";
-		ref7.ifscCode="HDFC0000010";
-		ref7.shiftCode="CGBJURRTG";
-		ref7.noOfWorkers=45;
-		ref7.branchManagerName="Anuj";
+		Bank ref7=new Bank(874,"HDFC Bank","Mumbai","HDFC0000010","CGBJURRTG",45,"Anuj");
 		
 		System.out.println("Bank Details:");
 		System.out.println("The bank id:"+ref7.bankId);
@@ -157,16 +93,8 @@ class BankRunner{
 		System.out.println("The number of workers :"+ref7.noOfWorkers);
 		System.out.println("The branch manager name:"+ref7.branchManagerName);
 		
-		Bank ref8=new Bank();
-		
-		ref8.bankId=987;
-		ref8.bankName="SBI";
-		ref8.branchName="Delhi";
-		ref8.ifscCode="SBIN0000691";
-		ref8.shiftCode="GFERTUOUG";
-		ref8.noOfWorkers=94;
-		ref8.branchManagerName="Sandesh";
-		
+		Bank ref8=new Bank(987,"SBI","Delhi","SBIN0000691","GFERTUOUG",94,"Sandesh");
+	
 		System.out.println("Bank Details:");
 		System.out.println("The bank id:"+ref8.bankId);
 		System.out.println("The bank name is:"+ref8.bankName);

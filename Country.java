@@ -17,5 +17,13 @@ class Country{
 		this.population=population;
 		
 	}
+	
+	public void getCountryDetails(){
 		
+		System.out.println("The Country Details Are:");
+		System.out.println("The Country Id is:"+	this.countryId);
+		System.out.println("The Country States Are :"+this.noOfStates);
+		System.out.println("The Country Prime Minister is:"+this.primeMinister);
+		System.out.println("The Country population is:"+this.population);
+}
 }

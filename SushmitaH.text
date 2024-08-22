@@ -1,0 +1,145 @@
+1.1)public static void main(String args[])
+	public is a access specifier.
+	static is a non access specifier.
+	void is a return type.
+	main is a method name.
+	String args[] is parameter with argument
+
+2)Class: Class is a tamplet or  design which having create state and behaviour.
+
+Object: Object is instance of class. It is fundamental or basic unit of object oriented programming language.It is blue print.
+
+
+3)JVM: Java Virtual Machine
+It is component which is used to provide run time enviorment  execute the byte code.
+Alongs with 3 types
+1.Load the byte code.
+2.Verify the byte code.
+3.Read the byte code stream line by line.
+
+JRE: Java Runtime Enviroment 
+It is component which is used execution time.
+It including the JVM and Set of libraries.
+It is helpful for JVM.
+
+JDK: Java Development Kit
+
+It is component which is used compile time and runtime.
+It include JRE+ Development kit(Debugger, Java Doc)
+
+
+2.Constuctor is a special type of method which name same as the class it does not have any return type.
+
+It including 2 types.
+1)Default constructor:It does not have any parameter or zero parameter.
+2)Parameter Consructor: It Have some parameter.
+
+3.keyword:It is reserve word or predefine  word special word which is used spefic meanng of java progrm. 
+this(): It is  also keyword but using constuctor calling the one method to  anthor method .
+
+
+4.Methd is a satic because it without creating object instead it use JVM
+
+Method: It is block of code wich is used perform certain functionality.
+It including two types: static Method ,non static method.
+
+
+5. 
+
+
+6.Reverse the order of component it create the project.
+
+
+7.
+class Arrays{
+
+	public static  void main(String arg[]){
+
+	int arrays[]={12,3,2,45,6,7,6};
+	
+	for(i=0;i<arrays.lenth; i++)
+	
+	int lengthArrays= arrays.length;
+
+	System.out.println(lenghArrays);
+	}
+	}
+}
+
+
+9.No..Instance vaiable can declare within main method  without having any static keyword. But static variable can declare inside class outside main method use static keyword
+
+8.Polymorphsm :Object behave like given  differet instance of time.
+
+Example:
+
+	class Engineer{
+	
+		publc void solveProblem(){
+
+
+			System.out.println("Get solve problem started");
+			System.out.println("Engineer solve the problem");
+			System.out.println("Get solve problem ");
+
+		}
+}
+ class CsEngineer extends Engineer{
+
+	@Override
+	public void solveProblem(){
+		System.out.pritln("CEngnner solve problem started");
+		super.solveProblem();
+		System.out.pritln("CEngnner solve problem ");
+		System.out.pritln("CEngnner solve problem Ended");
+}
+}
+
+class EngineerRunner{
+
+	public static oid main(String args[]){
+
+		ParrentClass Ref= new ChldClass;
+
+		Engineer engineer=new CsEngneer();				
+		engineer.sovleProblem();
+
+9.Inherit:It is property of auaring one class to anthor class.
+	Parent to child.
+	Base to derive.
+	Super to sub.
+
+ Parentclass Ref =new ParentClass();
+
+class Engineer{
+	
+		publc void solveProblem(){
+
+
+			System.out.println("Get solve problem started");
+			System.out.println("Engineer solve the problem");
+			System.out.println("Get solve problem ");
+
+		}
+}
+
+ class CsEngineer extends Engineer{
+}
+
+class EngineerRunner{
+
+	public static void main(String args[]){
+
+		ParrentClass Ref= new Parent;
+
+		Engineer engineer=new Engneer();				
+		engineer.sovleProblem();
+}
+
+
+
+
+
+Example
+
+
